@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Portal - Feedback</title>
+</head>
+<body>
+
+    <header>
+        <h1>Student Portal</h1>
+        <hr>
+    </header>
+
+    <h2>Student Feedback Form</h2>
+
+    <form>
+
+        <label><strong>Student Name:</strong></label><br>
+        <input type="text" placeholder="Enter your name"><br><br>
+
+        <label><strong>Enrollment Number:</strong></label><br>
+        <input type="text" placeholder="Enter enrollment number"><br><br>
+
+        <label><strong>Select Department:</strong></label><br>
+        <select>
+            <option>Computer Engineering</option>
+            <option>Information Technology</option>
+            <option>Mechanical Engineering</option>
+            <option>Civil Engineering</option>
+            <option>Electrical Engineering</option>
+        </select>
+
+        <br><br>
+
+        <label><strong>Overall Experience:</strong></label><br>
+        <input type="radio" name="experience"> Excellent
+        <input type="radio" name="experience"> Good
+        <input type="radio" name="experience"> Average
+        <input type="radio" name="experience"> Poor
+
+        <br><br>
+
+        <label><strong>Which services do you use?</strong></label><br>
+        <input type="checkbox"> Attendance<br>
+        <input type="checkbox"> Result<br>
+        <input type="checkbox"> Timetable<br>
+        <input type="checkbox"> Fees<br>
+        <input type="checkbox"> Events
+
+        <br><br>
+
+        <label><strong>Rate the Student Portal (1 to 5):</strong></label><br>
+        <input type="number" min="1" max="5">
+
+        <br><br>
+
+        <label><strong>Suggestions:</strong></label><br>
+        <textarea rows="5" cols="40" placeholder="Write your feedback here..."></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Submit Feedback">
+        <input type="reset" value="Clear Form">
+
+    </form>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Student Portal</p>
+    </footer>
+
+</body>
+</html>
