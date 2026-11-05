@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Patel",
+    "enrollment": "CE26-001",
+    "department": "Computer Engineering",
+    "course": "B.Tech",
+    "year": 1,
+    "division": "A",
+    "email": "aarav.patel@example.org"
+  },
+  {
+    "id": 2,
+    "name": "Aditi Shah",
+    "enrollment": "CE26-002",
+    "department": "Computer Engineering",
+    "course": "B.Tech",
+    "year": 2,
+    "division": "A",
+    "email": "aditi.shah@example.org"
+  },
+  {
+    "id": 3,
+    "name": "Dev Mehta",
+    "enrollment": "IT26-003",
+    "department": "Information Technology",
+    "course": "B.Tech",
+    "year": 3,
+    "division": "B",
+    "email": "dev.mehta@example.org"
+  },
+  {
+    "id": 4,
+    "name": "Isha Desai",
+    "enrollment": "EC26-004",
+    "department": "Electronics Engineering",
+    "course": "B.Tech",
+    "year": 1,
+    "division": "A",
+    "email": "isha.desai@example.org"
+  },
+  {
+    "id": 5,
+    "name": "Kabir Joshi",
+    "enrollment": "ME26-005",
+    "department": "Mechanical Engineering",
+    "course": "B.Tech",
+    "year": 4,
+    "division": "B",
+    "email": "kabir.joshi@example.org"
+  },
+  {
+    "id": 6,
+    "name": "Mira Trivedi",
+    "enrollment": "CE26-006",
+    "department": "Computer Engineering",
+    "course": "B.Tech",
+    "year": 3,
+    "division": "A",
+    "email": "mira.trivedi@example.org"
+  },
+  {
+    "id": 7,
+    "name": "Neel Vyas",
+    "enrollment": "CV26-007",
+    "department": "Civil Engineering",
+    "course": "B.Tech",
+    "year": 2,
+    "division": "B",
+    "email": "neel.vyas@example.org"
+  },
+  {
+    "id": 8,
+    "name": "Riya Parmar",
+    "enrollment": "IT26-008",
+    "department": "Information Technology",
+    "course": "B.Tech",
+    "year": 4,
+    "division": "A",
+    "email": "riya.parmar@example.org"
+  },
+  {
+    "id": 9,
+    "name": "Samar Shah",
+    "enrollment": "EC26-009",
+    "department": "Electronics Engineering",
+    "course": "B.Tech",
+    "year": 2,
+    "division": "A",
+    "email": "samar.shah@example.org"
+  },
+  {
+    "id": 10,
+    "name": "Tara Patel",
+    "enrollment": "CE26-010",
+    "department": "Computer Engineering",
+    "course": "B.Tech",
+    "year": 1,
+    "division": "B",
+    "email": "tara.patel@example.org"
+  },
+  {
+    "id": 11,
+    "name": "Vihaan Gandhi",
+    "enrollment": "ME26-011",
+    "department": "Mechanical Engineering",
+    "course": "B.Tech",
+    "year": 3,
+    "division": "A",
+    "email": "vihaan.gandhi@example.org"
+  },
+  {
+    "id": 12,
+    "name": "Zara Desai",
+    "enrollment": "CV26-012",
+    "department": "Civil Engineering",
+    "course": "B.Tech",
+    "year": 4,
+    "division": "A",
+    "email": "zara.desai@example.org"
+  },
+  {
+    "id": 13,
+    "name": "Arjun Nair",
+    "enrollment": "IT26-013",
+    "department": "Information Technology",
+    "course": "B.Tech",
+    "year": 2,
+    "division": "B",
+    "email": "arjun.nair@example.org"
+  },
+  {
+    "id": 14,
+    "name": "Diya Mehta",
+    "enrollment": "EC26-014",
+    "department": "Electronics Engineering",
+    "course": "B.Tech",
+    "year": 3,
+    "division": "B",
+    "email": "diya.mehta@example.org"
+  },
+  {
+    "id": 15,
+    "name": "Rehan Khan",
+    "enrollment": "CE26-015",
+    "department": "Computer Engineering",
+    "course": "B.Tech",
+    "year": 4,
+    "division": "A",
+    "email": "rehan.khan@example.org"
+  }
+]

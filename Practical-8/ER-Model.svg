@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="540" viewBox="0 0 1100 540" role="img" aria-labelledby="title desc">
+  <title id="title">StudentHub Practical 8 ER model</title>
+  <desc id="desc">Students and events each have a one-to-many relationship with registrations.</desc>
+  <rect width="1100" height="540" rx="18" fill="#f2f6f8"/>
+  <text x="550" y="55" text-anchor="middle" font-family="Arial" font-size="28" font-weight="700" fill="#173b57">StudentHub ER Model</text>
+  <g font-family="Arial" fill="#203342">
+    <rect x="55" y="130" width="290" height="300" rx="12" fill="#fff" stroke="#8baabb" stroke-width="2"/>
+    <rect x="55" y="130" width="290" height="52" rx="12" fill="#176b87"/>
+    <text x="200" y="165" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">STUDENTS</text>
+    <text x="82" y="220" font-size="17" font-weight="700">PK  student_id</text>
+    <text x="82" y="255" font-size="17">UQ  student_code</text>
+    <text x="82" y="290" font-size="17">UQ  email</text>
+    <text x="82" y="325" font-size="17">full_name</text>
+    <text x="82" y="360" font-size="17">course_code</text>
+    <text x="82" y="395" font-size="17">year_of_study</text>
+
+    <rect x="755" y="130" width="290" height="300" rx="12" fill="#fff" stroke="#8baabb" stroke-width="2"/>
+    <rect x="755" y="130" width="290" height="52" rx="12" fill="#176b87"/>
+    <text x="900" y="165" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">EVENTS</text>
+    <text x="782" y="220" font-size="17" font-weight="700">PK  event_id</text>
+    <text x="782" y="255" font-size="17">UQ  event_code</text>
+    <text x="782" y="290" font-size="17">title</text>
+    <text x="782" y="325" font-size="17">category</text>
+    <text x="782" y="360" font-size="17">event_date</text>
+    <text x="782" y="395" font-size="17">venue</text>
+
+    <rect x="405" y="185" width="290" height="250" rx="12" fill="#fff" stroke="#d2a253" stroke-width="2"/>
+    <rect x="405" y="185" width="290" height="52" rx="12" fill="#c77a21"/>
+    <text x="550" y="220" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">REGISTRATIONS</text>
+    <text x="432" y="275" font-size="17" font-weight="700">PK  registration_id</text>
+    <text x="432" y="310" font-size="17" font-weight="700">FK  student_id</text>
+    <text x="432" y="345" font-size="17" font-weight="700">FK  event_id</text>
+    <text x="432" y="380" font-size="17">registered_at, status</text>
+    <text x="550" y="410" text-anchor="middle" font-size="14" fill="#5d6f7b">UQ (student_id, event_id)</text>
+  </g>
+  <g stroke="#173b57" stroke-width="3" fill="none">
+    <path d="M345 280 H395"/><path d="M705 280 H745"/>
+  </g>
+  <g font-family="Arial" font-size="15" font-weight="700" fill="#173b57">
+    <text x="355" y="265">1</text><text x="380" y="265">N</text>
+    <text x="715" y="265">N</text><text x="735" y="265">1</text>
+  </g>
+  <text x="550" y="495" text-anchor="middle" font-family="Arial" font-size="16" fill="#526a7a">Registrations resolves the many-to-many relationship between students and events.</text>
+</svg>

@@ -1,0 +1,79 @@
+:root {
+    color-scheme: light;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #213547;
+    background: #f1f5f8;
+}
+
+* { box-sizing: border-box; }
+
+body { min-width: 320px; min-height: 100vh; margin: 0; }
+
+.page {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    padding: 28px 16px;
+}
+
+.card {
+    width: min(100%, 490px);
+    padding: 34px;
+    border: 1px solid #d9e2e8;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 14px 38px rgb(28 57 77 / 8%);
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    color: #176b87;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .12em;
+}
+
+h1 { margin: 0; color: #173b57; font-size: clamp(27px, 6vw, 34px); }
+.intro { margin: 9px 0 22px; color: #5c6e7b; }
+.field { display: grid; gap: 6px; margin: 17px 0; }
+label { font-weight: 700; }
+
+input:not([type="checkbox"]) {
+    width: 100%;
+    min-height: 45px;
+    padding: 10px 12px;
+    border: 1px solid #aebdc7;
+    border-radius: 7px;
+    color: #213547;
+    font: inherit;
+}
+
+.remember { display: flex; gap: 9px; align-items: flex-start; margin: 18px 0; font-weight: 400; }
+.remember input { width: 18px; height: 18px; margin: 0; accent-color: #176b87; }
+
+button {
+    width: 100%;
+    min-height: 46px;
+    margin-top: 7px;
+    border: 0;
+    border-radius: 7px;
+    background: #176b87;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover { background: #11566e; }
+.notice, .status { padding: 12px 14px; border: 1px solid #b7d3df; border-radius: 7px; background: #f0f8fb; color: #174b62; }
+.notice.error { border-color: #e5aaa5; background: #fff2f0; color: #8d2119; }
+.credentials { margin-top: 24px; padding: 14px; border-radius: 8px; background: #f4f7f9; font-size: 13px; }
+.credentials p { margin: 8px 0 0; }
+.credentials code { overflow-wrap: anywhere; }
+.muted { color: #647681; line-height: 1.6; }
+.dashboard form { margin-top: 22px; }
+:focus-visible { outline: 3px solid #edaa42; outline-offset: 2px; }
+
+@media (max-width: 480px) {
+    .card { padding: 25px 20px; }
+}

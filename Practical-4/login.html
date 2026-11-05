@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="login-header">
+    <h1>Student Portal</h1>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme">🌙 Dark mode</button>
+</header>
+
+<main id="loginContent">
+
+    <section class="login-card">
+        <h2>Login</h2>
+
+        <form action="home.html">
+
+            <div class="login-field">
+                <label for="email">Email ID</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your Email" required>
+            </div>
+
+            <div class="login-field">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password"
+                       placeholder="Enter your Password" required>
+            </div>
+
+            <div class="login-buttons">
+                <input type="submit" value="Login">
+                <input type="reset" value="Clear">
+            </div>
+
+            <p class="register-text">
+                Don't have an account?
+                <a href="register.html">Register Here</a>
+            </p>
+
+        </form>
+    </section>
+
+</main>
+
+<footer class="login-footer">
+    © 2026 Student Portal | Computer Engineering Department
+</footer>
+
+<script src="slidebar.js"></script>
+</body>
+</html>

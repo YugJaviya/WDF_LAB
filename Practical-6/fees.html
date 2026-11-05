@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fees - Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <button id="menuButton" type="button" aria-label="Open navigation menu" aria-controls="sidebar" aria-expanded="false">☰</button>
+    <h1>Student Portal</h1>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme">🌙 Dark mode</button>
+</header>
+
+<nav id="sidebar" aria-label="Main navigation">
+    <div class="sidebar-top">
+        <h2>Menu</h2>
+        <button id="closeButton" type="button" aria-label="Close navigation menu" aria-controls="sidebar">×</button>
+    </div>
+
+        <ul>
+        <li><a href="home.html">🏠 Home</a></li>
+        <li><a href="event.html" >🎉 Events</a></li>
+        <li><a href="result.html">📊 Result</a></li>
+        <li><a href="profile.html">👤 Profile</a></li>
+        <li><a href="timetable.html">📅 Time Table</a></li>
+        <li><a href="feedback.html" class="active">📝 Feedback</a></li>
+        <li><a href="attendance.html">📚 Attendance</a></li>
+        <li><a href="dashboard.html">📈 Dashboard</a></li>
+        <li><a href="fees.html">💰 Fees</a></li>
+        <li><a href="login.html">🚪 Logout</a></li>
+    </ul>
+</nav>
+
+<main id="feesContent">
+
+    <div class="page-heading">
+        <h2>Fee Details</h2>
+        <p>View your semester fee details and payment information.</p>
+    </div>
+
+    <section class="fee-student-card">
+        <h3>Student Information</h3>
+
+        <div class="fee-student-details">
+            <p><strong>Student Name:</strong> Tyler Williams</p>
+            <p><strong>Enrollment No:</strong> 25CEXXX</p>
+            <p><strong>Course:</strong> B.Tech Computer Engineering</p>
+            <p><strong>Semester:</strong> 3</p>
+        </div>
+    </section>
+
+    <section class="fee-card">
+        <h3>Fee Breakdown</h3>
+
+        <div class="fee-table-wrapper">
+            <table class="fee-table">
+                <thead>
+                    <tr>
+                        <th>Fee Type</th>
+                        <th>Amount (₹)</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Tuition Fee</td>
+                        <td>45,000</td>
+                        <td>Paid</td>
+                    </tr>
+                    <tr>
+                        <td>Examination Fee</td>
+                        <td>2,500</td>
+                        <td>Paid</td>
+                    </tr>
+                    <tr>
+                        <td>Library Fee</td>
+                        <td>1,000</td>
+                        <td>Paid</td>
+                    </tr>
+                    <tr>
+                        <td>Laboratory Fee</td>
+                        <td>3,500</td>
+                        <td>Paid</td>
+                    </tr>
+                    <tr>
+                        <td>Other Charges</td>
+                        <td>1,000</td>
+                        <td>Paid</td>
+                    </tr>
+                    <tr class="fee-total">
+                        <th>Total Fee</th>
+                        <th>53,000</th>
+                        <th>Paid</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="payment-card">
+        <h3>Payment Information</h3>
+
+        <div class="payment-details">
+            <p><strong>Payment Date:</strong> 12 July 2026</p>
+            <p><strong>Payment Mode:</strong> Online (UPI)</p>
+            <p><strong>Receipt No.:</strong> FEE2026CE3045</p>
+        </div>
+
+        <button type="button" class="receipt-btn">Download Receipt</button>
+    </section>
+
+</main>
+
+<footer>
+    © 2026 Student Portal | Computer Engineering Department
+</footer>
+
+<script src="slidebar.js"></script>
+</body>
+</html>

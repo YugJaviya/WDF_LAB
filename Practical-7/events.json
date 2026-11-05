@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Student Innovation Showcase",
+    "category": "Technology",
+    "date": "2026-11-04",
+    "venue": "Main Auditorium",
+    "description": "Students present practical engineering projects, prototypes, and demonstrations."
+  },
+  {
+    "id": 2,
+    "title": "Inter-Department Football",
+    "category": "Sports",
+    "date": "2026-11-12",
+    "venue": "College Sports Ground",
+    "description": "Teams compete in the annual inter-department football tournament."
+  },
+  {
+    "id": 3,
+    "title": "Web Development Workshop",
+    "category": "Workshop",
+    "date": "2026-11-19",
+    "venue": "Computer Lab 2",
+    "description": "Build a responsive page and explore modern HTML, CSS, and JavaScript."
+  },
+  {
+    "id": 4,
+    "title": "Literary and Debate Meet",
+    "category": "Cultural",
+    "date": "2026-11-27",
+    "venue": "Seminar Hall",
+    "description": "Join public speaking, debate, poetry, and creative writing activities."
+  },
+  {
+    "id": 5,
+    "title": "Career Planning Seminar",
+    "category": "Seminar",
+    "date": "2026-12-03",
+    "venue": "Conference Room",
+    "description": "Learn about internships, portfolios, interviews, and early career planning."
+  },
+  {
+    "id": 6,
+    "title": "Winter Sports Day",
+    "category": "Sports",
+    "date": "2026-12-10",
+    "venue": "College Sports Ground",
+    "description": "A day of athletics, badminton, chess, and team games for students."
+  },
+  {
+    "id": 7,
+    "title": "Robotics and IoT Lab",
+    "category": "Workshop",
+    "date": "2026-12-16",
+    "venue": "Robotics Laboratory",
+    "description": "Try sensor modules and assemble a basic connected device."
+  },
+  {
+    "id": 8,
+    "title": "Open Source Contribution Day",
+    "category": "Technology",
+    "date": "2027-01-08",
+    "venue": "Innovation Center",
+    "description": "Practice Git collaboration and make a first contribution to a shared project."
+  },
+  {
+    "id": 9,
+    "title": "Semester Project Review",
+    "category": "Academic",
+    "date": "2027-01-14",
+    "venue": "Department Project Rooms",
+    "description": "Present semester work and receive feedback from faculty mentors."
+  },
+  {
+    "id": 10,
+    "title": "Campus Music Evening",
+    "category": "Cultural",
+    "date": "2027-01-22",
+    "venue": "Open Air Stage",
+    "description": "Enjoy student performances and an evening of music on campus."
+  },
+  {
+    "id": 11,
+    "title": "Code Sprint Challenge",
+    "category": "Hackathon",
+    "date": "2027-01-29",
+    "venue": "Computer Engineering Block",
+    "description": "Work in teams to design and build a small software solution."
+  },
+  {
+    "id": 12,
+    "title": "Alumni Career Talk",
+    "category": "Seminar",
+    "date": "2027-02-05",
+    "venue": "Main Auditorium",
+    "description": "Alumni share their experiences in engineering roles and further study."
+  },
+  {
+    "id": 13,
+    "title": "Inter-College Badminton",
+    "category": "Sports",
+    "date": "2027-02-11",
+    "venue": "Indoor Sports Complex",
+    "description": "Represent the college in singles and doubles badminton matches."
+  },
+  {
+    "id": 14,
+    "title": "Design Thinking Studio",
+    "category": "Workshop",
+    "date": "2027-02-17",
+    "venue": "Innovation Center",
+    "description": "Explore user research, problem framing, and rapid prototyping."
+  },
+  {
+    "id": 15,
+    "title": "Student Research Poster Day",
+    "category": "Academic",
+    "date": "2027-02-24",
+    "venue": "Central Library Hall",
+    "description": "Share research ideas and project findings through poster presentations."
+  }
+]

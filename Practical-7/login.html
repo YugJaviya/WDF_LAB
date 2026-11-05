@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Student Registration - Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="login-header">
+    <h1>Student Portal</h1>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme">🌙 Dark mode</button>
+</header>
+
+<main id="loginContent">
+
+    <section class="login-card" aria-labelledby="loginTitle">
+        <h2 id="loginTitle">Login</h2>
+
+        <form action="home.html">
+            <div class="login-field">
+                <label for="loginEmail">Email ID</label>
+                <input type="email" id="loginEmail" name="email" placeholder="Enter your Email" autocomplete="email" required>
+            </div>
+
+            <div class="login-field">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" name="password" placeholder="Enter your Password" autocomplete="current-password" required>
+            </div>
+
+            <div class="login-buttons">
+                <input type="submit" value="Login">
+                <input type="reset" value="Clear">
+            </div>
+
+            <p class="register-text">Don't have an account? <a href="#registrationCard">Register Here</a></p>
+        </form>
+    </section>
+
+    <section class="registration-card" id="registrationCard" aria-labelledby="registrationTitle">
+        <h2 id="registrationTitle">Student Registration</h2>
+        <p class="registration-intro">Complete every field to create your student profile. Your details are checked on the server and saved securely.</p>
+
+        <form id="registrationForm" action="register.php" method="post" novalidate>
+            <div class="registration-field">
+                <label for="studentName">Full name</label>
+                <input type="text" id="studentName" name="studentName" autocomplete="name" minlength="2" maxlength="50" required aria-describedby="studentNameError">
+                <span class="field-error" id="studentNameError" aria-live="polite"></span>
+            </div>
+
+            <div class="registration-field">
+                <label for="studentEmail">Email address</label>
+                <input type="email" id="studentEmail" name="studentEmail" autocomplete="email" required aria-describedby="studentEmailError">
+                <span class="field-error" id="studentEmailError" aria-live="polite"></span>
+            </div>
+
+            <div class="registration-field">
+                <label for="mobileNumber">Mobile number</label>
+                <input type="tel" id="mobileNumber" name="mobileNumber" autocomplete="tel" inputmode="numeric" maxlength="10" pattern="[6-9][0-9]{9}" title="Enter a 10-digit Indian mobile number starting with 6, 7, 8, or 9" placeholder="10-digit Indian mobile number" required aria-describedby="mobileNumberError">
+                <span class="field-error" id="mobileNumberError" aria-live="polite"></span>
+            </div>
+
+            <div class="registration-field">
+                <label for="newPassword">Password</label>
+                <input type="password" id="newPassword" name="newPassword" autocomplete="new-password" minlength="8" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,}" required aria-describedby="passwordHelp passwordStrength passwordError">
+                <small id="passwordHelp">Use at least 8 characters with uppercase, lowercase, a number, and a symbol.</small>
+                <div class="strength-track" aria-hidden="true"><span id="strengthBar"></span></div>
+                <span class="strength-label" id="passwordStrength" aria-live="polite">Password strength: not entered</span>
+                <span class="field-error" id="passwordError" aria-live="polite"></span>
+            </div>
+
+            <div class="registration-field">
+                <label for="confirmPassword">Confirm password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" autocomplete="new-password" required aria-describedby="confirmPasswordError">
+                <span class="field-error" id="confirmPasswordError" aria-live="polite"></span>
+            </div>
+
+            <div class="registration-field">
+                <label for="course">Course</label>
+                <select id="course" name="course" required aria-describedby="courseError">
+                    <option value="">Select your course</option>
+                    <option value="computer-engineering">Computer Engineering</option>
+                    <option value="information-technology">Information Technology</option>
+                    <option value="electronics">Electronics Engineering</option>
+                    <option value="mechanical">Mechanical Engineering</option>
+                    <option value="civil">Civil Engineering</option>
+                </select>
+                <span class="field-error" id="courseError" aria-live="polite"></span>
+            </div>
+
+            <div class="registration-field">
+                <label for="studyYear">Year of study</label>
+                <select id="studyYear" name="studyYear" required aria-describedby="studyYearError">
+                    <option value="">Select your year</option>
+                    <option value="1">First year</option>
+                    <option value="2">Second year</option>
+                    <option value="3">Third year</option>
+                    <option value="4">Fourth year</option>
+                </select>
+                <span class="field-error" id="studyYearError" aria-live="polite"></span>
+            </div>
+
+            <fieldset class="registration-field gender-field" aria-describedby="genderError">
+                <legend>Gender</legend>
+                <div class="registration-options">
+                    <label><input type="radio" name="gender" value="female" required> Female</label>
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                    <label><input type="radio" name="gender" value="prefer-not-to-say"> Prefer not to say</label>
+                </div>
+                <span class="field-error" id="genderError" aria-live="polite"></span>
+            </fieldset>
+
+            <div class="registration-field terms-field">
+                <label for="acceptTerms"><input type="checkbox" id="acceptTerms" name="acceptTerms" required aria-describedby="acceptTermsError"> I confirm that the information above is correct and accept the terms.</label>
+                <span class="field-error" id="acceptTermsError" aria-live="polite"></span>
+            </div>
+
+            <div class="registration-actions">
+                <button class="submit-btn" type="submit">Create account</button>
+                <button class="reset-btn" type="reset">Clear form</button>
+            </div>
+            <p id="registrationStatus" class="registration-status" role="status" aria-live="polite"></p>
+        </form>
+        <p class="register-text"><a href="contact.html">Send a contact message</a> · <a href="records.php">View saved records</a></p>
+    </section>
+
+</main>
+
+<footer class="login-footer">
+    © 2026 Student Portal | Computer Engineering Department
+</footer>
+
+<script src="slidebar.js"></script>
+</body>
+</html>
+

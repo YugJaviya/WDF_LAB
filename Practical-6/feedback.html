@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <button id="menuButton" type="button" aria-label="Open navigation menu" aria-controls="sidebar" aria-expanded="false">☰</button>
+        <h1>Student Portal</h1>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme">🌙 Dark mode</button>
+    </header>
+
+
+    <!-- Sidebar -->
+    <nav id="sidebar" aria-label="Main navigation">
+
+        <div class="sidebar-header">
+            <h2>Menu</h2>
+            <button id="closeButton" type="button" aria-label="Close navigation menu" aria-controls="sidebar">×</button>
+        </div>
+
+            <ul>
+        <li><a href="home.html">🏠 Home</a></li>
+        <li><a href="event.html" >🎉 Events</a></li>
+        <li><a href="result.html">📊 Result</a></li>
+        <li><a href="profile.html">👤 Profile</a></li>
+        <li><a href="timetable.html">📅 Time Table</a></li>
+        <li><a href="feedback.html" class="active">📝 Feedback</a></li>
+        <li><a href="attendance.html">📚 Attendance</a></li>
+        <li><a href="dashboard.html">📈 Dashboard</a></li>
+        <li><a href="fees.html">💰 Fees</a></li>
+        <li><a href="login.html">🚪 Logout</a></li>
+    </ul>
+
+    </nav>
+
+
+    <!-- Main Content -->
+    <main id="feedbackContent">
+
+        <div class="page-heading">
+            <h2>Student Feedback Form</h2>
+            <p>Share your experience and suggestions to help us improve the Student Portal.</p>
+        </div>
+
+
+        <section class="feedback-card">
+
+            <form>
+
+                <!-- Student Name -->
+                <div class="form-group">
+                    <label for="studentName">Student Name</label>
+                    <input type="text" id="studentName" name="studentName"
+                        placeholder="Enter your name">
+                </div>
+
+
+                <!-- Enrollment Number -->
+                <div class="form-group">
+                    <label for="enrollment">Enrollment Number</label>
+                    <input type="text" id="enrollment" name="enrollment"
+                        placeholder="Enter enrollment number">
+                </div>
+
+
+                <!-- Department -->
+                <div class="form-group">
+                    <label for="department">Select Department</label>
+
+                    <select id="department" name="department">
+                        <option>Computer Engineering</option>
+                        <option>Information Technology</option>
+                        <option>Mechanical Engineering</option>
+                        <option>Civil Engineering</option>
+                        <option>Electrical Engineering</option>
+                    </select>
+                </div>
+
+
+                <!-- Overall Experience -->
+                <div class="form-group">
+
+                    <label>Overall Experience</label>
+
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="experience" value="Excellent">
+                            Excellent
+                        </label>
+
+                        <label>
+                            <input type="radio" name="experience" value="Good">
+                            Good
+                        </label>
+
+                        <label>
+                            <input type="radio" name="experience" value="Average">
+                            Average
+                        </label>
+
+                        <label>
+                            <input type="radio" name="experience" value="Poor">
+                            Poor
+                        </label>
+                    </div>
+
+                </div>
+
+
+                <!-- Services -->
+                <div class="form-group">
+
+                    <label>Which services do you use?</label>
+
+                    <div class="checkbox-group">
+
+                        <label>
+                            <input type="checkbox" name="services" value="Attendance">
+                            Attendance
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="services" value="Result">
+                            Result
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="services" value="Timetable">
+                            Timetable
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="services" value="Fees">
+                            Fees
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="services" value="Events">
+                            Events
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Rating -->
+                <div class="form-group">
+
+                    <label for="rating">Rate the Student Portal (1 to 5)</label>
+
+                    <input type="number" id="rating" name="rating"
+                        min="1" max="5" placeholder="1 - 5">
+
+                </div>
+
+
+                <!-- Suggestions -->
+                <div class="form-group">
+
+                    <label for="suggestions">Suggestions</label>
+
+                    <textarea id="suggestions" name="suggestions"
+                        rows="5"
+                        placeholder="Write your feedback here..."></textarea>
+
+                </div>
+
+
+                <!-- Buttons -->
+                <div class="form-buttons">
+
+                    <input type="submit" value="Submit Feedback" class="submit-btn">
+
+                    <input type="reset" value="Clear Form" class="reset-btn">
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        © 2026 Student Portal | Computer Engineering Department
+    </footer>
+
+
+    <script src="slidebar.js"></script>
+
+</body>
+
+</html>

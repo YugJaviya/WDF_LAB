@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet" href="RESULT.css">
+</head>
+<body>
+
+<header>
+    <button id="menuButton" type="button" aria-label="Open navigation menu" aria-controls="sidebar" aria-expanded="false">☰</button>
+    <h1>Student Portal</h1>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme">🌙 Dark mode</button>
+</header>
+
+<nav id="sidebar" aria-label="Main navigation">
+    <div class="sidebar-top">
+        <h2>Menu</h2>
+        <button id="closeButton" type="button" aria-label="Close navigation menu" aria-controls="sidebar">×</button>
+    </div>
+    <ul>
+        <li><a href="home.html">🏠 Home</a></li>
+        <li><a href="event.html">🎉 Events</a></li>
+        <li><a href="result.html" class="active">📊 Result</a></li>
+        <li><a href="profile.html">👤 Profile</a></li>
+        <li><a href="timetable.html">📅 Time Table</a></li>
+        <li><a href="feedback.html">📝 Feedback</a></li>
+        <li><a href="attendance.html">📚 Attendance</a></li>
+        <li><a href="dashboard.html">📈 Dashboard</a></li>
+        <li><a href="fees.html">💰 Fees</a></li>
+        <li><a href="login.html">🚪 Logout</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="result-card">
+        <h2>Semester 3 Result</h2>
+        <hr>
+        <p><strong>Student Name:</strong> ABC XYZ</p>
+        <p><strong>Enrollment No:</strong> 23CE001</p>
+
+        <table>
+            <tr>
+                <th>Subject</th><th>Marks</th><th>Grade</th>
+            </tr>
+            <tr><td>C++</td><td>8</td><td>A+</td></tr>
+            <tr><td>Digital Electronics</td><td>8</td><td>A</td></tr>
+            <tr><td>Mathematics II</td><td>9</td><td>O</td></tr>
+            <tr><td>EOE</td><td>7</td><td>B+</td></tr>
+            <tr><td>EVS</td><td>9</td><td>O</td></tr>
+            <tr class="total"><th>Total</th><th></th><th>A+</th></tr>
+        </table>
+
+        <p class="cgpa"><strong>CGPA:</strong> 8.86</p>
+    </div>
+</main>
+
+<footer>© 2026 Student Portal | Computer Engineering Department</footer>
+<script src="slidebar.js"></script>
+
+</body>
+</html>

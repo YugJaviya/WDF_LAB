@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="data-view.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <button id="menuButton" type="button" aria-label="Open navigation menu" aria-controls="sidebar" aria-expanded="false">☰</button>
+        <h1>Student Portal</h1>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme">🌙 Dark mode</button>
+    </header>
+
+    <!-- Sidebar -->
+    <nav id="sidebar" aria-label="Main navigation">
+
+        <div class="sidebar-header">
+            <h2>Menu</h2>
+            <button id="closeButton" type="button" aria-label="Close navigation menu" aria-controls="sidebar">×</button>
+        </div>
+
+           <ul>
+        <li><a href="home.html">🏠 Home</a></li>
+        <li><a href="event.html" >🎉 Events</a></li>
+        <li><a href="result.html">📊 Result</a></li>
+        <li><a href="profile.html"class="active">👤 Profile</a></li>
+        <li><a href="timetable.html">📅 Time Table</a></li>
+        <li><a href="feedback.html">📝 Feedback</a></li>
+        <li><a href="attendance.html">📚 Attendance</a></li>
+        <li><a href="dashboard.html">📈 Dashboard</a></li>
+        <li><a href="fees.html">💰 Fees</a></li>
+        <li><a href="login.html">🚪 Logout</a></li>
+    </ul>
+
+    </nav>
+
+
+    <!-- Main Content -->
+    <main id="profileContent">
+
+        <div class="page-heading">
+            <h2>Student Profile</h2>
+            <p>View and manage your personal, academic, and contact information.</p>
+        </div>
+
+
+        <!-- Profile and Academic Details -->
+        <div class="profile-grid">
+
+            <!-- Student Profile -->
+            <section class="profile-card">
+
+                <h3>Student Information</h3>
+
+                <div class="profile-details">
+                    <p><strong>Name:</strong> Tyler Williams</p>
+                    <p><strong>Enrollment Number:</strong> 25CEXXX</p>
+                    <p><strong>Roll Number:</strong> CE-45</p>
+                    <p><strong>Date of Birth:</strong> 20 March 2007</p>
+                    <p><strong>Gender:</strong> Male</p>
+                </div>
+
+            </section>
+
+
+            <!-- Academic Details -->
+            <section class="profile-card">
+
+                <h3>Academic Details</h3>
+
+                <div class="profile-details">
+                    <p><strong>Department:</strong> Computer Engineering</p>
+                    <p><strong>Course:</strong> Bachelor of Technology (B.Tech)</p>
+                    <p><strong>Semester:</strong> 3</p>
+                    <p><strong>Division:</strong> A</p>
+                    <p><strong>Academic Year:</strong> 2026-27</p>
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- Contact Details -->
+        <section class="profile-card">
+
+            <h3>Contact Details</h3>
+
+            <div class="profile-details">
+                <p><strong>Email:</strong> tyler23@example.com</p>
+                <p><strong>Mobile Number:</strong> 9876543210</p>
+                <p><strong>Address:</strong> Surat, Gujarat, India</p>
+            </div>
+
+        </section>
+
+
+        <!-- Parent and Emergency Details -->
+        <div class="profile-grid">
+
+            <!-- Parent Details -->
+            <section class="profile-card">
+
+                <h3>Parent Details</h3>
+
+                <div class="profile-details">
+                    <p><strong>Father's Name:</strong> Mahesh Patel</p>
+                    <p><strong>Mother's Name:</strong> Sunita Patel</p>
+                    <p><strong>Parent Contact:</strong> 9876501234</p>
+                </div>
+
+            </section>
+
+
+            <!-- Emergency Contact -->
+            <section class="profile-card">
+
+                <h3>Emergency Contact</h3>
+
+                <div class="profile-details">
+                    <p><strong>Contact Person:</strong> Mahesh Patel</p>
+                    <p><strong>Relationship:</strong> Father</p>
+                    <p><strong>Phone Number:</strong> 9876501234</p>
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <section class="data-panel data-view" data-source="students.json" data-collection="students" data-filter-field="department" data-search-fields="name,enrollment,department,course,division" aria-labelledby="studentsTitle">
+    <h3 id="studentsTitle">Student Directory</h3>
+    <p class="data-intro">This view loads records from students.json and updates as you search, filter, or sort.</p>
+    <div class="collection-controls">
+        <div class="collection-control">
+            <label for="studentsSearch">Search students</label>
+            <input id="studentsSearch" type="search" data-role="search" placeholder="Type to search">
+        </div>
+        <div class="collection-control">
+            <label for="studentsFilter">Filter by department</label>
+            <select id="studentsFilter" data-role="filter"><option value="">All</option></select>
+        </div>
+        <div class="collection-control">
+            <label for="studentsSort">Sort results</label>
+            <select id="studentsSort" data-role="sort"><option value="name-asc">Name A to Z</option><option value="name-desc">Name Z to A</option><option value="year-asc">Year ascending</option><option value="year-desc">Year descending</option></select>
+        </div>
+    </div>
+    <p class="data-status" data-role="status" role="status" aria-live="polite">Loading students...</p>
+    <p class="data-summary" data-role="summary" aria-live="polite"></p>
+    <div class="data-grid" data-role="results"></div>
+    <p class="data-error" data-role="error" role="alert" hidden></p>
+    <button class="data-retry" data-role="retry" type="button" hidden>Try loading again</button>
+    <nav class="data-pagination" data-role="pagination" aria-label="students pages" hidden>
+        <button type="button" data-action="previous" disabled>Previous</button>
+        <span data-role="page" aria-live="polite"></span>
+        <button type="button" data-action="next" disabled>Next</button>
+    </nav>
+</section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        © 2026 Student Portal | Computer Engineering Department
+    </footer>
+
+
+    <script src="slidebar.js"></script>
+<script type="module" src="portal-data.js"></script>
+
+</body>
+
+</html>

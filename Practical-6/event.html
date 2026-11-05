@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Events</title>
+    <link rel="stylesheet" href="event-style.css">
+    <link rel="stylesheet" href="data-view.css">
+</head>
+<body>
+
+<header>
+    <button id="menuButton" type="button" aria-label="Open navigation menu" aria-controls="sidebar" aria-expanded="false">☰</button>
+    <h1>Student Portal</h1>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme">🌙 Dark mode</button>
+</header>
+
+<nav id="sidebar" aria-label="Main navigation">
+    <div class="sidebar-top">
+        <h2>Menu</h2>
+        <button id="closeButton" type="button" aria-label="Close navigation menu" aria-controls="sidebar">×</button>
+    </div>
+    <ul>
+        <li><a href="home.html">🏠 Home</a></li>
+        <li><a href="event.html" class="active">🎉 Events</a></li>
+        <li><a href="result.html">📊 Result</a></li>
+        <li><a href="profile.html">👤 Profile</a></li>
+        <li><a href="timetable.html">📅 Time Table</a></li>
+        <li><a href="feedback.html">📝 Feedback</a></li>
+        <li><a href="attendance.html">📚 Attendance</a></li>
+        <li><a href="dashboard.html">📈 Dashboard</a></li>
+        <li><a href="fees.html">💰 Fees</a></li>
+        <li><a href="login.html">🚪 Logout</a></li>
+    </ul>
+</nav>
+
+<main>
+<section class="events-container">
+    <h2>Upcoming Events</h2><hr>
+
+        <section class="event-slider" aria-label="Featured upcoming events">
+        <div class="slider-heading"><h3>Event Spotlight</h3><span id="slidePosition" aria-live="polite">1 of 3</span></div>
+        <article class="event-slide" aria-roledescription="slide" aria-label="1 of 3">
+            <p class="slide-kicker">Sports · 18 August 2026</p><h4>Annual Sports Week</h4>
+            <p>Join a week of cricket, football, volleyball, badminton, athletics and more.</p>
+            <button type="button" class="slide-details" data-event-title="Annual Sports Week 2026" data-event-date="18 August 2026" data-event-venue="College Sports Ground">View event details</button>
+        </article>
+        <article class="event-slide" aria-roledescription="slide" aria-label="2 of 3" hidden>
+            <p class="slide-kicker">Technology · 5 September 2026</p><h4>Project Exhibition</h4>
+            <p>Explore innovative engineering projects presented by students.</p>
+            <button type="button" class="slide-details" data-event-title="Project Exhibition" data-event-date="5 September 2026" data-event-venue="Main Auditorium">View event details</button>
+        </article>
+        <article class="event-slide" aria-roledescription="slide" aria-label="3 of 3" hidden>
+            <p class="slide-kicker">Hackathon · 22 September 2026</p><h4>College Hackathon 2026</h4>
+            <p>Build an innovative software or hardware project in 24 hours.</p>
+            <button type="button" class="slide-details" data-event-title="College Hackathon 2026" data-event-date="22 September 2026" data-event-venue="Innovation Center">View event details</button>
+        </article>
+        <div class="slider-controls"><button type="button" id="previousSlide" aria-label="Previous featured event">← Previous</button><button type="button" id="nextSlide" aria-label="Next featured event">Next →</button></div>
+    </section>
+<section class="data-panel data-view" data-source="events.json" data-collection="events" data-filter-field="category" data-search-fields="title,category,venue,description" aria-labelledby="eventsTitle">
+    <h3 id="eventsTitle">Event Directory</h3>
+    <p class="data-intro">This view loads records from events.json and updates as you search, filter, or sort.</p>
+    <div class="collection-controls">
+        <div class="collection-control">
+            <label for="eventsSearch">Search events</label>
+            <input id="eventsSearch" type="search" data-role="search" placeholder="Type to search">
+        </div>
+        <div class="collection-control">
+            <label for="eventsFilter">Filter by category</label>
+            <select id="eventsFilter" data-role="filter"><option value="">All</option></select>
+        </div>
+        <div class="collection-control">
+            <label for="eventsSort">Sort results</label>
+            <select id="eventsSort" data-role="sort"><option value="date-asc">Date earliest first</option><option value="date-desc">Date latest first</option><option value="title-asc">Title A to Z</option><option value="title-desc">Title Z to A</option></select>
+        </div>
+    </div>
+    <p class="data-status" data-role="status" role="status" aria-live="polite">Loading events...</p>
+    <p class="data-summary" data-role="summary" aria-live="polite"></p>
+    <div class="data-grid" data-role="results"></div>
+    <p class="data-error" data-role="error" role="alert" hidden></p>
+    <button class="data-retry" data-role="retry" type="button" hidden>Try loading again</button>
+    <nav class="data-pagination" data-role="pagination" aria-label="events pages" hidden>
+        <button type="button" data-action="previous" disabled>Previous</button>
+        <span data-role="page" aria-live="polite"></span>
+        <button type="button" data-action="next" disabled>Next</button>
+    </nav>
+</section>
+
+    <div class="notice">
+        <h3>Important Notice</h3>
+        <ul>
+            <li>Register before the last registration date.</li>
+            <li>Carry your Student ID card during every event.</li>
+            <li>Follow the rules and regulations of the event.</li>
+            <li>Certificates will be provided to participants.</li>
+        </ul>
+    </div>
+</section>
+<dialog id="eventDialog" class="event-dialog" aria-labelledby="dialogTitle">
+    <div class="dialog-heading"><h2 id="dialogTitle">Event details</h2><button type="button" id="closeEventDialog" aria-label="Close event details">×</button></div>
+    <p><strong>Date:</strong> <span id="dialogDate"></span></p><p><strong>Venue:</strong> <span id="dialogVenue"></span></p>
+</dialog>
+</main>
+
+<footer>© 2026 Student Portal | Computer Engineering Department</footer>
+<script src="slidebar.js"></script>
+<script type="module" src="portal-data.js"></script>
+</body>
+</html>

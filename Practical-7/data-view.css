@@ -1,0 +1,237 @@
+/* Practical 6: reusable JSON-backed search, filter, sort, and pagination views */
+.data-panel {
+    margin: 28px 0;
+    padding: 24px;
+    border-radius: 14px;
+    background: #fff;
+    color: #172033;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .07);
+}
+
+.data-panel > h3 {
+    margin: 0 0 8px;
+    color: #1769aa;
+    font-size: 23px;
+}
+
+.data-intro {
+    margin: 0 0 18px;
+    color: #52667a;
+    line-height: 1.5;
+}
+
+.collection-controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    gap: 14px;
+    margin: 18px 0;
+}
+
+.collection-control label {
+    display: block;
+    margin-bottom: 6px;
+    color: #172033;
+    font-weight: 700;
+}
+
+.collection-control input,
+.collection-control select {
+    width: 100%;
+    min-height: 42px;
+    padding: 9px 11px;
+    border: 1px solid #c8d2dc;
+    border-radius: 7px;
+    background: #fff;
+    color: #172033;
+    font: inherit;
+}
+
+.collection-control input:focus-visible,
+.collection-control select:focus-visible,
+.data-pagination button:focus-visible,
+.data-retry:focus-visible {
+    outline: 3px solid #73b8ed;
+    outline-offset: 2px;
+}
+
+.data-status,
+.data-summary {
+    color: #52667a;
+    margin: 9px 0;
+}
+
+.data-status:empty,
+.data-summary:empty {
+    display: none;
+}
+
+.data-error {
+    padding: 12px 14px;
+    border-left: 4px solid #b42318;
+    border-radius: 6px;
+    background: #fff1f0;
+    color: #8f1d16;
+    line-height: 1.5;
+}
+
+.data-retry,
+.data-pagination button {
+    border: 1px solid #1769aa;
+    border-radius: 7px;
+    padding: 9px 14px;
+    background: #1769aa;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.data-retry:hover,
+.data-pagination button:not(:disabled):hover {
+    background: #0d4f80;
+}
+
+.data-pagination button:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 16px;
+    margin-top: 14px;
+}
+
+.data-card {
+    min-width: 0;
+    margin: 0;
+    padding: 18px;
+    border: 1px solid #dce3ea;
+    border-radius: 10px;
+    background: #f8fafc;
+    color: #172033;
+    overflow-wrap: anywhere;
+}
+
+.data-card h4 {
+    margin: 0 0 10px;
+    color: #102a43;
+    font-size: 18px;
+}
+
+.data-card p {
+    margin: 7px 0;
+    line-height: 1.5;
+}
+
+.data-card .profile-details p {
+    margin-bottom: 7px;
+}
+
+.data-card .data-category {
+    display: inline-block;
+    margin: 0 0 8px;
+    color: #1769aa;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.faq-card summary {
+    color: #102a43;
+    font-weight: 700;
+    line-height: 1.45;
+    cursor: pointer;
+}
+
+.faq-card summary:focus-visible {
+    outline: 3px solid #73b8ed;
+    outline-offset: 3px;
+    border-radius: 3px;
+}
+
+.faq-card[open] {
+    background: #fff;
+}
+
+.faq-card > p {
+    margin-top: 12px;
+    color: #52667a;
+}
+
+.empty-state {
+    grid-column: 1 / -1;
+    padding: 18px;
+    border: 1px dashed #aab8c5;
+    border-radius: 8px;
+    color: #52667a;
+    text-align: center;
+}
+
+.data-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.data-pagination[hidden],
+.data-retry[hidden],
+.data-error[hidden] {
+    display: none;
+}
+
+.data-pagination span {
+    color: #52667a;
+    font-weight: 700;
+}
+
+body.dark-theme .data-panel,
+body.dark-theme .data-card {
+    background: #1d2a3a !important;
+    color: #e7edf5 !important;
+    border-color: #52667a;
+}
+
+body.dark-theme .data-panel > h3,
+body.dark-theme .collection-control label,
+body.dark-theme .data-card h4,
+body.dark-theme .faq-card summary,
+body.dark-theme .data-intro,
+body.dark-theme .data-status,
+body.dark-theme .data-summary,
+body.dark-theme .data-pagination span,
+body.dark-theme .data-card p {
+    color: #e7edf5;
+}
+
+body.dark-theme .collection-control input,
+body.dark-theme .collection-control select {
+    background: #111a26;
+    color: #e7edf5;
+    border-color: #52667a;
+}
+
+body.dark-theme .data-error {
+    background: #3a2025;
+    color: #ffd9d6;
+}
+
+@media (max-width: 600px) {
+    .data-panel {
+        padding: 18px;
+    }
+
+    .data-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .data-pagination {
+        gap: 9px;
+    }
+
+    .data-pagination button {
+        padding: 8px 10px;
+    }
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-wrap{max-width:760px;margin:36px auto;padding:24px;background:#fff;border-radius:14px;box-shadow:0 8px 28px rgba(20,50,70,.12)}
+        .contact-wrap h2{margin-top:0}.contact-field{display:grid;gap:7px;margin:16px 0}.contact-field input,.contact-field textarea{width:100%;padding:12px;border:1px solid #9aabb7;border-radius:7px;font:inherit}.contact-field textarea{min-height:150px;resize:vertical}.contact-actions{display:flex;gap:10px;flex-wrap:wrap}.contact-actions button{padding:11px 16px;border:0;border-radius:7px;background:#176b87;color:#fff;font:inherit;cursor:pointer}.contact-actions a{align-self:center}
+    </style>
+</head>
+<body>
+    <main class="contact-wrap">
+        <h2>Contact Student Portal</h2>
+        <p>Send a message. PHP checks the submitted details and stores valid messages.</p>
+        <form action="contact.php" method="post">
+            <div class="contact-field">
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" minlength="2" maxlength="60" autocomplete="name" required>
+            </div>
+            <div class="contact-field">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" maxlength="254" autocomplete="email" required>
+            </div>
+            <div class="contact-field">
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" minlength="3" maxlength="100" required>
+            </div>
+            <div class="contact-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" minlength="10" maxlength="2000" required></textarea>
+            </div>
+            <div class="contact-actions">
+                <button type="submit">Send message</button>
+                <button type="reset">Clear form</button>
+                <a href="login.html#registrationCard">Student registration</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="data-view.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <button id="menuButton" type="button" aria-label="Open navigation menu" aria-controls="sidebar" aria-expanded="false">☰</button>
+        <h1>Student Portal</h1>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme">🌙 Dark mode</button>
+    </header>
+
+    <!-- Sidebar -->
+    <nav id="sidebar" aria-label="Main navigation">
+        <div class="sidebar-header">
+            <h2>Menu</h2>
+            <button id="closeButton" type="button" aria-label="Close navigation menu" aria-controls="sidebar">×</button>
+        </div>
+
+           <ul>
+        <li><a href="home.html" class="active">🏠 Home</a></li>
+        <li><a href="event.html" >🎉 Events</a></li>
+        <li><a href="result.html">📊 Result</a></li>
+        <li><a href="profile.html">👤 Profile</a></li>
+        <li><a href="timetable.html">📅 Time Table</a></li>
+        <li><a href="feedback.html">📝 Feedback</a></li>
+        <li><a href="attendance.html">📚 Attendance</a></li>
+        <li><a href="dashboard.html">📈 Dashboard</a></li>
+        <li><a href="fees.html">💰 Fees</a></li>
+        <li><a href="login.html">🚪 Logout</a></li>
+    </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="mainContent">
+
+        <section class="welcome">
+            <h2>Welcome to the Student Portal</h2>
+            <p>Welcome to the Student Portal. This portal provides all the important academic services in one place. Students can check attendance, view results, access the timetable, pay fees, submit feedback, and stay informed about college events.</p>
+        </section>
+
+        <section>
+            <h3>Latest Announcements</h3>
+            <ul>
+                <li>Semester 3 classes begin on 15 August.</li>
+                <li>Mid-Semester Examination starts from 10 September.</li>
+                <li>Fee payment deadline: 25 August.</li>
+                <li>Hackathon registration is now open.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Student Information</h3>
+            <p><strong>Name:</strong> Rahul Patel</p>
+            <p><strong>Enrollment No:</strong> 23CE045</p>
+            <p><strong>Department:</strong> Computer Engineering</p>
+            <p><strong>Semester:</strong> 3</p>
+        </section>
+
+        <section>
+            <h3>Quick Links</h3>
+            <ul>
+                <li>Check your latest attendance.</li>
+                <li>View examination results.</li>
+                <li>Download the class timetable.</li>
+                <li>Pay semester fees.</li>
+                <li>Update your profile.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>About the Portal</h3>
+            <p>The Student Portal is designed to make academic services easily accessible. From viewing results and attendance to managing fees and personal information, everything is available through this portal.</p>
+        </section>
+
+            <section class="data-panel data-view" data-source="faqs.json" data-collection="faqs" data-filter-field="category" data-search-fields="question,answer,category" aria-labelledby="faqsTitle">
+    <h3 id="faqsTitle">Frequently Asked Questions</h3>
+    <p class="data-intro">This view loads records from faqs.json and updates as you search, filter, or sort.</p>
+    <div class="collection-controls">
+        <div class="collection-control">
+            <label for="faqsSearch">Search faqs</label>
+            <input id="faqsSearch" type="search" data-role="search" placeholder="Type to search">
+        </div>
+        <div class="collection-control">
+            <label for="faqsFilter">Filter by category</label>
+            <select id="faqsFilter" data-role="filter"><option value="">All</option></select>
+        </div>
+        <div class="collection-control">
+            <label for="faqsSort">Sort results</label>
+            <select id="faqsSort" data-role="sort"><option value="question-asc">Question A to Z</option><option value="question-desc">Question Z to A</option><option value="category-asc">Category A to Z</option></select>
+        </div>
+    </div>
+    <p class="data-status" data-role="status" role="status" aria-live="polite">Loading faqs...</p>
+    <p class="data-summary" data-role="summary" aria-live="polite"></p>
+    <div class="data-grid" data-role="results"></div>
+    <p class="data-error" data-role="error" role="alert" hidden></p>
+    <button class="data-retry" data-role="retry" type="button" hidden>Try loading again</button>
+    <nav class="data-pagination" data-role="pagination" aria-label="faqs pages" hidden>
+        <button type="button" data-action="previous" disabled>Previous</button>
+        <span data-role="page" aria-live="polite"></span>
+        <button type="button" data-action="next" disabled>Next</button>
+    </nav>
+</section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 Student Portal | Computer Engineering Department
+    </footer>
+
+    <script src="slidebar.js"></script>
+<script type="module" src="portal-data.js"></script>
+
+</body>
+</html>

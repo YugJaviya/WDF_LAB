@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "category": "Attendance",
+    "question": "How do I check my attendance?",
+    "answer": "Choose Attendance from the navigation menu to view subject-wise attendance and the overall percentage."
+  },
+  {
+    "id": 2,
+    "category": "Results",
+    "question": "Where can I see examination results?",
+    "answer": "Open the Result page from the menu to review marks, grades, and CGPA information."
+  },
+  {
+    "id": 3,
+    "category": "Events",
+    "question": "How can I find upcoming college events?",
+    "answer": "Open Events to search, filter, sort, and browse the event list by page."
+  },
+  {
+    "id": 4,
+    "category": "Profile",
+    "question": "Where can I view student profile information?",
+    "answer": "Open Profile to see the sample student profile and search the student directory."
+  },
+  {
+    "id": 5,
+    "category": "Timetable",
+    "question": "Where is the class timetable?",
+    "answer": "Choose Time Table in the menu. On a small screen, scroll the timetable horizontally."
+  },
+  {
+    "id": 6,
+    "category": "Fees",
+    "question": "How can I check my semester fees?",
+    "answer": "The Fees page displays the semester fee breakdown and payment details."
+  },
+  {
+    "id": 7,
+    "category": "Feedback",
+    "question": "How do I send feedback?",
+    "answer": "Open Feedback, complete the form, select the relevant options, and submit your comments."
+  },
+  {
+    "id": 8,
+    "category": "Login",
+    "question": "What should I do if I cannot log in?",
+    "answer": "Check the email and password fields. This practical portal is a frontend demonstration and does not authenticate real accounts."
+  },
+  {
+    "id": 9,
+    "category": "Registration",
+    "question": "How do I register as a student?",
+    "answer": "Use the registration form on the Login page and correct any field errors before submitting."
+  },
+  {
+    "id": 10,
+    "category": "Events",
+    "question": "Can I search for a specific event?",
+    "answer": "Enter a title, category, venue, or description in the Events search box."
+  },
+  {
+    "id": 11,
+    "category": "Events",
+    "question": "How do I filter events by type?",
+    "answer": "Choose a category such as Sports, Workshop, or Academic from the event category filter."
+  },
+  {
+    "id": 12,
+    "category": "Student Directory",
+    "question": "How do I find a student profile?",
+    "answer": "On the Profile page, search by name, enrollment number, department, course, or division."
+  },
+  {
+    "id": 13,
+    "category": "Student Directory",
+    "question": "Can I sort the student directory?",
+    "answer": "Use the sort menu to order students by name or year of study."
+  },
+  {
+    "id": 14,
+    "category": "Data and Privacy",
+    "question": "Are the displayed student records real?",
+    "answer": "No. The external JSON files contain sample records for this practical demonstration."
+  },
+  {
+    "id": 15,
+    "category": "Technical",
+    "question": "Why does the data not load when I open an HTML file directly?",
+    "answer": "Browsers restrict Fetch API requests from file URLs. Start the folder with a local web server, such as the VS Code Live Server extension."
+  }
+]

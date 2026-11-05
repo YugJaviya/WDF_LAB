@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <button id="menuButton" type="button" aria-label="Open navigation menu" aria-controls="sidebar" aria-expanded="false">☰</button>
+    <h1>Student Portal</h1>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme">🌙 Dark mode</button>
+</header>
+
+<nav id="sidebar" aria-label="Main navigation">
+    <div class="sidebar-top">
+        <h2>Menu</h2>
+        <button id="closeButton" type="button" aria-label="Close navigation menu" aria-controls="sidebar">×</button>
+    </div>
+     <ul>
+        <li><a href="home.html">🏠 Home</a></li>
+        <li><a href="event.html">🎉 Events</a></li>
+        <li><a href="result.html">📊 Result</a></li>
+        <li><a href="profile.html">👤 Profile</a></li>
+        <li><a href="timetable.html">📅 Time Table</a></li>
+        <li><a href="feedback.html">📝 Feedback</a></li>
+        <li><a href="attendance.html" >📚 Attendance</a></li>
+        <li><a href="dashboard.html"class="active">📈 Dashboard</a></li>
+        <li><a href="fees.html">💰 Fees</a></li>
+        <li><a href="login.html">🚪 Logout</a></li>
+    </ul>
+</nav>
+
+<main id="dashboardContent">
+    <aside class="notification-banner" id="dashboardNotice" role="status"><p><strong>Reminder:</strong> Check the latest announcements and upcoming campus events.</p><button type="button" id="dismissNotice" aria-label="Dismiss notification">×</button></aside>
+
+
+    <div class="page-heading">
+        <h2>Student Dashboard</h2>
+        <p>Welcome, Rahul Patel! Here is a quick overview of your academic information.</p>
+    </div>
+
+    <section class="dashboard-student">
+        <h3>Student Information</h3>
+        <div class="dashboard-details">
+            <p><strong>Enrollment No:</strong> 23CE045</p>
+            <p><strong>Department:</strong> Computer Engineering</p>
+            <p><strong>Semester:</strong> 3</p>
+        </div>
+    </section>
+
+    <section class="dashboard-section">
+        <h3>Academic Summary</h3>
+        <div class="summary-grid">
+            <div class="summary-card">
+                <span>CGPA</span>
+                <strong>8.86</strong>
+            </div>
+            <div class="summary-card">
+                <span>Attendance</span>
+                <strong>91%</strong>
+            </div>
+            <div class="summary-card">
+                <span>Current Semester</span>
+                <strong>3</strong>
+            </div>
+            <div class="summary-card">
+                <span>Total Subjects</span>
+                <strong>5</strong>
+            </div>
+        </div>
+    </section>
+
+    <section class="dashboard-section">
+        <h3>Recent Notifications</h3>
+        <ul class="notification-list">
+            <li>📢 Mid-Semester Exam starts from 10 September.</li>
+            <li>📢 Last date for fee payment is 25 August.</li>
+            <li>📢 Hackathon registration is now open.</li>
+            <li>📢 Sports Week begins on 18 August.</li>
+        </ul>
+    </section>
+
+    <section class="dashboard-section">
+        <h3>Quick Summary</h3>
+        <div class="summary-table-wrapper">
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Attendance</td><td>91%</td></tr>
+                    <tr><td>Fees</td><td>Paid</td></tr>
+                    <tr><td>Result</td><td>Pass</td></tr>
+                    <tr><td>Events Registered</td><td>2</td></tr>
+                    <tr><td>Feedback</td><td>Submitted</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    © 2026 Student Portal | Computer Engineering Department
+</footer>
+
+<script src="slidebar.js"></script>
+</body>
+</html>
